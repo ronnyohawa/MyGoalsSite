@@ -7,28 +7,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>My Tech Goals in the next Two Years</h1>
-    <div class="profile_info">
-        <img src="slackprofile.png" width="400" height="534" data-test-id="slackProfilePicture" alt="slackProfilePicture" />
-        <div>
-            <h1 data-test-id="slackDisplayName">Ronny Ohawa</h1>
-            <h2 data-test-id="slackEmail">ochiengohawa@gmail.com</h2>
-        </div>
-    </div>
-    <div class="time_infor">
-      <div class="times">
-        <h2>Current Time:<h2 id="hour"></h2>:<h2 id="min"></h2>:<h2 id="sec"></h2></h2>
-      </div>
-      <h2 id="day">Current Date:</h2>
-    </div>
-    <div class="mygoals">
-
-    </div>
-    <div class="links">
-
-    </div>
-  </div>
+  <header>
+    <h1>My Tech Goals for the Next 2 Years</h1>
+  </header>
+  <main>
+    <section class="profile">
+      <img src="slackprofile.png" width="400" height="532" alt="Profile Picture" data-testid="slackProfilePicture">
+      <p data-testid="slackDisplayName">Ronny Ohawa</p>
+      <p data-testid="slackEmail">ochiengohawa@gmail.com</p>
+    </section>
+    <section class="time-info">
+      <p data-testid="currentTimeUTC" id="current-time"></p>
+      <p data-testid="currentDay">Current Day: <span id="current-day"></span></p>
+    </section>
+    <section class="goals">
+      <h2>My Goals</h2>
+      <ul>
+        <li>Start My Own Tech Startup:
+          <ul>
+            <li>Develop a unique tech product that solves a real-world problem.</li>
+            <li>Build a team of skilled professionals to work on the startup.</li>
+            <li>Secure funding and grow the business.</li>
+          </ul>
+        </li>
+        <li>Contribute to Open Source Projects:
+          <ul>
+            <li>Identify and contribute to relevant open-source projects.</li>
+            <li>Improve collaboration and coding skills.</li>
+            <li>Give back to the developer community.</li>
+          </ul>
+        </li>
+        <li>Enhance Backend Development Skills:
+          <ul>
+            <li>Learn backend technologies such as Node.js, Express, and databases like MongoDB and PostgreSQL.</li>
+            <li>Build and deploy scalable backend applications.</li>
+            <li>Understand and implement RESTful APIs and GraphQL.</li>
+          </ul>
+        </li>
+        <li>Build a Personal Project Portfolio:
+          <ul>
+            <li>Develop a variety of projects to showcase skills and creativity.</li>
+            <li>Maintain and update a personal portfolio website.</li>
+            <li>Include detailed descriptions and code samples of projects.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="links">
+      <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+      <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+      <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Your Name</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
